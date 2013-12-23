@@ -1,6 +1,13 @@
 @import "colors";
 @import "settings";
 @import "foundation";
+@import "bourbon/bourbon";
+
+.amp {
+    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    font-weight: normal;
+}
 
 
 header {
@@ -9,25 +16,50 @@ header {
 
 #hero {
     position: relative;
-    // background: url(../img/cfmlegal_header.jpg) no-repeat center center;
-    // background-size: cover;
-    // background-attachment: fixed;
-    background-color: transparentize($color-green-sea, 0.3);
-    padding-top: 3em;
-    padding-bottom: 3em;
+    background: url(../img/cfmlegal_peter_river.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10em;
+    padding-bottom: 5em;
 
-    &:after {
-        content: "";
-        background: url(../img/cfmlegal_header.jpg) no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
-        opacity: 0.5;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
+    // background-color: transparentize($color-pomegranate, 0.3);
+    // &:after {
+    //     content: "";
+    //     background: url(../img/cfmlegal_header.jpg) no-repeat center center;
+    //     background-size: cover;
+    //     background-attachment: fixed;
+    //     opacity: 0.5;
+    //     top: 0;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     position: absolute;
+    //     z-index: -1;
+    // }
+
+    .logo {
+        margin-bottom: 2em;
+    }
+
+    h1 {
+        display: inline-block;
+        background: rgba(255,255,255,0.75);
+        color: $color-midnight-blue;
+        padding: 0 0.2em;
+        // margin-bottom: 0;
+        margin-top: 0.25em;
+        font-weight: 300;
+    }
+    p {
+        display: inline-block;
+        background: transparentize($color-midnight-blue, 0.25);
+        color: white;
+        padding: 0 0.5em;
+        font-size: 0.8em;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        // margin-top: 0;
     }
 }
 
@@ -73,7 +105,7 @@ header {
     padding: 2em 0;
     background-color: $color-wet-asphalt;
     h2 {
-        color: $color-green-sea;
+        color: $color-peter-river;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 3em;
@@ -97,11 +129,12 @@ header {
             font-weight: light;
             small {
                 color: $color-midnight-blue;
-                -webkit-transition: color 0.25s ease;
-                -moz-transition: color 0.25s ease;
-                -ms-transition: color 0.25s ease;
-                -o-transition: color 0.25s ease;
-                transition: color 0.25s ease;
+                @include transition(color 250ms ease);
+                // -webkit-transition: color 0.25s ease;
+                // -moz-transition: color 0.25s ease;
+                // -ms-transition: color 0.25s ease;
+                // -o-transition: color 0.25s ease;
+                // transition: color 0.25s ease;
                 padding-left: 1em;
             }
             a {
