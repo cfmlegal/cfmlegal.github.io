@@ -1,0 +1,92 @@
+@import "colors";
+@import "settings";
+@import "foundation";
+
+
+header {
+    @include grid-row();
+}
+
+#hero {
+    position: relative;
+    // background: url(../img/cfmlegal_header.jpg) no-repeat center center;
+    // background-size: cover;
+    // background-attachment: fixed;
+    background-color: transparentize($color-green-sea, 0.3);
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    &:after {
+        content: "";
+        background: url(../img/cfmlegal_header.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.aboutus {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    p {
+        font-size: 1.2em;
+        font-weight: 300;
+        &.lede {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.ourservices {
+    background: $color-clouds;
+    padding: 2em 0;
+    .service {
+        text-align: center;
+        h4 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.75em;
+            letter-spacing: 0.3em;
+            margin-bottom: 1.5em;
+        }
+        img {
+            opacity: 0.3;
+            max-width: 50%;
+            max-height: 10em;
+            margin-bottom: 1em;
+        }
+        li:before {
+            content: "· "
+        }
+        padding: 1em 0;
+    }
+}
+
+#partners {
+    padding: 2em 0;
+    background-color: $color-midnight-blue;
+    h2 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+}
+
+
+footer {
+    @include grid-row();
+    padding-top: 3em;
+    padding-bottom: 4em;
+    color: $color-silver;
+    font-size: 0.8em;
+}
