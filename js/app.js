@@ -14,7 +14,7 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: office,
         map: map,
-        title:"Hahoshlim 6, Herzeliya Pituach"
+        title:"Hahoshlim 6, Herzliya Pituach"
     });
 
     var contentString = '<div class="mapinfo">HaHoshlim 6, Herzeliya Pituach</div>'
