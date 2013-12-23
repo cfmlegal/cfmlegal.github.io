@@ -68,8 +68,8 @@ header {
 }
 
 .aboutus {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 4em;
     text-align: center;
     p {
         font-size: 1.2em;
@@ -106,7 +106,7 @@ header {
 }
 
 #partners {
-    padding: 2em 0;
+    padding: 3em 0;
     background-color: $color-wet-asphalt;
     h2 {
         color: $color-peter-river;
@@ -152,6 +152,49 @@ header {
             color: darken($color-midnight-blue, 10%);
         }
     }
+}
+
+#contactdetails {
+    padding: 2em 0;
+    h2 {
+        margin-bottom: 1em;
+        color: $color-pomegranate;
+    }
+
+    h5 {
+        font-weight: bold;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        color: $color-silver;
+        text-transform: uppercase;
+    }
+
+    .contactgroup {
+        margin-bottom: 2em;
+
+        a {
+            display: inline-block;
+            @include transition(all 200ms);
+            color: $color-wet-asphalt;
+            font-size: 2em;
+            border-bottom: 1px dotted transparentize($color-wet-asphalt, 0.5);
+            &:hover {
+                color: $color-pomegranate;
+                border-bottom-color: $color-pomegranate;
+            }
+
+        }
+    }
+
+    .vcard {
+        border: none;
+    }
+
+}
+
+#contactmap {
+    min-height: 24em;
+    background-color: $color-clouds;
 }
 
 
