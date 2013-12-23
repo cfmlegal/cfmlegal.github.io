@@ -9,9 +9,23 @@
     font-weight: normal;
 }
 
-
+#nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 header {
-    @include grid-row();
+    dl {
+        float: right;
+    }
+    a {
+        font-size: 0.85em;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        color: $color-wet-asphalt;
+    }
 }
 
 #hero {
@@ -21,21 +35,6 @@ header {
     background-attachment: fixed;
     padding-top: 10em;
     padding-bottom: 5em;
-
-    // background-color: transparentize($color-pomegranate, 0.3);
-    // &:after {
-    //     content: "";
-    //     background: url(../img/cfmlegal_header.jpg) no-repeat center center;
-    //     background-size: cover;
-    //     background-attachment: fixed;
-    //     opacity: 0.5;
-    //     top: 0;
-    //     left: 0;
-    //     bottom: 0;
-    //     right: 0;
-    //     position: absolute;
-    //     z-index: -1;
-    // }
 
     .logo {
         margin-bottom: 4em;
