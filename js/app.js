@@ -25,3 +25,9 @@ function initialize() {
     infowindow.open(map,marker);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$(function() {
+    $("header").localScroll({
+        offset: -100
+    });
+});

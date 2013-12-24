@@ -19,8 +19,8 @@ header {
     }
     a {
         font-size: 0.85em;
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 0.1em;
@@ -105,13 +105,13 @@ header {
 }
 
 #partners {
-    padding: 3em 0;
+    padding: 4em 0;
     background-color: $color-wet-asphalt;
     h2 {
-        color: $color-peter-river;
+        color: $color-clouds;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 3em;
+        font-size: 4em;
         letter-spacing: 0.1em;
         text-align: center;
     }
@@ -127,28 +127,28 @@ header {
             }
         }
         h3 {
-            color: $color-clouds;
             text-shadow: 0 1px 0 $color-midnight-blue;
             font-weight: light;
             small {
-                color: $color-midnight-blue;
-                @include transition(color 250ms ease);
-                // -webkit-transition: color 0.25s ease;
-                // -moz-transition: color 0.25s ease;
-                // -ms-transition: color 0.25s ease;
-                // -o-transition: color 0.25s ease;
-                // transition: color 0.25s ease;
-                padding-left: 1em;
+                // color: darken($color-midnight-blue, 4%);
+                opacity: 0.5;
+                color: $color-peter-river;
+                @include transition(opacity 200ms);
+                border-bottom: 1px dotted $color-peter-river;
             }
             a {
-                color: $color-clouds;
+                color: $color-peter-river;
             }
             a:hover small {
-                color: $color-pomegranate;
+                opacity: 1;
+                // color: $color-pomegranate;
             }
         }
         p {
-            color: darken($color-midnight-blue, 10%);
+            // color: darken($color-midnight-blue, 13%);
+            color: $color-clouds;
+            font-size: 1.15em;
+            font-weight: 300;
         }
     }
 }
@@ -192,8 +192,11 @@ header {
 }
 
 #contactmap {
-    min-height: 24em;
+    height: 30em;
     background-color: $color-clouds;
+    img {
+        max-width: none;
+    }
 }
 
 
