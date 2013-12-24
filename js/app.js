@@ -5,7 +5,8 @@ function initialize() {
 
     var mapOptions = {
         center: office,
-        zoom: 15
+        zoom: 15,
+        scrollwheel: false
     };
 
     var map = new google.maps.Map(document.getElementById("contactmap"),
