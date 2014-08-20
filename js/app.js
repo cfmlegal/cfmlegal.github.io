@@ -1,7 +1,7 @@
 $(document).foundation();
 
 function initialize() {
-    var office = new google.maps.LatLng(32.1586959, 34.8066168);
+    var office = new google.maps.LatLng(32.1302077,34.7937857);
 
     var mapOptions = {
         center: office,
@@ -15,10 +15,10 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: office,
         map: map,
-        title:"Hahoshlim 6, Herzliya Pituach"
+        title:"9/40 Avigur, Tel Aviv"
     });
 
-    var contentString = '<div class="mapinfo">HaHoshlim 6, Herzeliya Pituach</div>'
+    var contentString = '<div class="mapinfo">9/40 Avigur, Tel Aviv</div>'
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
