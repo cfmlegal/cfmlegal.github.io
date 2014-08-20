@@ -134,7 +134,9 @@ header {
                 opacity: 0.5;
                 color: $color-peter-river;
                 @include transition(opacity 200ms);
-                border-bottom: 1px dotted $color-peter-river;
+                .email {
+                    border-bottom: 1px dotted $color-peter-river;
+                }
             }
             a {
                 color: $color-peter-river;
